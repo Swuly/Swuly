@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swuly's Gaming Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="1286590975-415781727-b2c6701a-6401-48b6-9cb4-53b6c87ae399.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    
+    <header>
+        <div class="title-bar">
+            <h1 id="home-button">Swuly</h1>
+        </div>
+        <img src="swulyicon.png" alt="Swuly Icon" id="icon">
+        <!-- Add audio and volume slider -->
+        <audio id="bg-music" loop>
+            <source src="background-music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+    </header>
+    
+    <nav>
+        <div class="hamburger">&#9776;</div>
+        <ul class="dropdown">
+            <li><a href="#" id="socials-button">Socials</a></li>
+            <li><a href="#" id="clips-button">Clips</a></li>
+        </ul>
+    </nav>
+    
+    <section id="socials" class="hidden">
+        <h2>Follow Me</h2>
+        <div class="video-container">
+            <h3>Twitch</h3>
+            <video autoplay muted loop>
+                <source src="twitchintro.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <p>Follow me on Twitch: <a href="https://www.twitch.tv/swuly">https://www.twitch.tv/swuly</a></p>
+        </div>
+        <div class="video-container">
+            <h3>YouTube</h3>
+            <video autoplay muted loop>
+                <source src="youtubeintro.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <p>Subscribe to my YouTube channel: <a href="https://www.youtube.com/@swuly3772">https://www.youtube.com/@swuly3772</a></p>
+        </div>
+    </section>
+
+    <section id="clips" class="hidden">
+        <h2>Clips</h2>
+        <div class="clips-container">
+            <video controls src="clip1.mp4"></video>
+            <video controls src="clip2.mp4"></video>
+            <video controls src="clip3.mp4"></video>
+            <video controls src="clip4.mp4"></video>
+            <video controls src="clip5.mp4"></video>
+            <video controls src="clip6.mp4"></video>
+            <video controls src="clip7.mp4"></video>
+            <video controls src="clip8.mp4"></video>
+            <video controls src="clip9.mp4"></video>
+            <video controls src="clip10.mp4"></video>
+            <video controls src="clip11.mp4"></video>
+            <video controls src="clip12.mp4"></video>
+            <video controls src="clip13.mp4"></video>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Swuly's Gaming Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
